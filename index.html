@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *, *::after, *::before{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;;
+    }
+:root{
+    /* --- Color ---  */
+    --state-900:#1F314F;
+    --state-500:#68778D;
+    --state-300:#D5E1EF;
+    --white: #FFFFFF;
+
+    /* --- Font Size --- */
+    --text-title:22px;
+    --text-info:15px;
+
+    /* --- Line Height --- */
+    --lh-120:1.2;
+    --lh-140:1.4;
+
+    /* --- Letter Spacing --- */
+    --ls-1:0;
+    --ls-2:0.2px;
+
+    /* --- Spacing --- */
+    --s500:40px;
+    --s300:24px;
+    --s200:16px;
+
+    /* --- Border radius--- */
+    --br-main:20px;
+    --br-image:10px;
+
+}
+
+body{
+  background: var(--state-300);
+  font-family: Outfit;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+background: var(--white);
+width: 100%;
+max-width: 320px;
+border-radius: var(--br-main);
+padding: var(--s200);
+
+}
+
+.image{
+  width: 100%;
+  display: block;
+  border-radius: var(--br-image);
+}
+
+.content{
+  padding-inline: var(--s200);
+  padding-bottom: var(--s500);
+  padding-top: var(--s300);
+}
+
+.title{
+font-size: var(--text-title);
+color: var(--state-900);
+font-weight: bold;
+line-height: var(--lh-120);
+letter-spacing: var(--ls-1);
+padding-bottom: var(--s200);
+}
+
+.info{
+  font-size: var(--text-info);
+  color: var(--state-500);
+  font-weight: 500;
+  line-height: var(--lh-140);
+  letter-spacing: var(--ls-2);
+}
+
+@media screen and (max-weight:376px){
+  .main{min-width: 376px}
+}
+  </style>
+</head>
+<body>
+  <main class="main">
+    <img class="image" src="images/image-qr-code.png" alt="">
+    <section class="content">
+    <h1 class="title">Improve your front-end skills by building projects</h1>
+    <p class="info">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </section>
+  </main>
+</body>
+</html>
